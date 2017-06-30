@@ -1,0 +1,20 @@
+
+.previewer-close {
+	position: absolute;
+	width: 3vw;
+	height: 3vw;
+	border-bottom-left-radius: 3vw;
+	right: 0;
+	top: 0;
+	box-sizing: border-box;
+	background-color: rgba(0,0,0,0.75);
+}
+
+.previewer-close>span {
+	position: absolute;
+	font-size: 1.5vw;
+	font-weight: bold;
+	color: white;	
+	top: 0.25vw;
+	right: 0.5vw;
+}
