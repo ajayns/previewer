@@ -5,8 +5,12 @@ body {
 
 /* PREVIEWER STYLING */
 
+#previewer {
+	display: none;
+}
+
 /* Button to close previewer */
-.previewer-close {
+#previewer-close {
 	position: absolute;
 	width: 3vw;
 	height: 3vw;
@@ -16,10 +20,11 @@ body {
 	box-sizing: border-box;
 	background-color: rgba(0, 0, 0, 0.75);
 	cursor: pointer;
+	z-index: 999;
 }
 
 /* 'x' inside the close button */
-.previewer-close>span {
+#previewer-close>span {
 	position: absolute;
 	font-size: 1.5vw;
 	font-weight: bold;
@@ -29,7 +34,7 @@ body {
 }
 
 /* Styling for image */
-.previewer-img {
+#previewer-img {
 	margin: auto;
 	position: fixed;
 	top: 0;
@@ -44,7 +49,7 @@ body {
 }
 
 /* Transperant page fade */
-.previewer-fade {
+#previewer-fade {
 	background-color: rgba(0,0,0,0.25);
 	position: absolute;
 	width: 100vw;

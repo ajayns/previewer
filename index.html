@@ -16,15 +16,21 @@
 <body>
 	
 	<!-- Previewer Code here -->
-	<div>
-		<div class="previewer-fade"></div>
-		<img src="" alt="" class="previewer-img">
-		<div class="previewer-close">
+	<div id="previewer">
+		<div id="previewer-fade"></div>
+		<img src="" alt="" id="previewer-img">
+		<div id="previewer-close">
 			<span>&times;</span>
 		</div>
 	</div>
 
 	<script src="scripts.js"></script>
+	<script>
+		showPreview();
+		document.getElementById("previewer-close").onclick = function() {
+			closePreview();
+		}
+	</script>
 </body>
 
 </html>
