@@ -20,7 +20,7 @@ body {
 	box-sizing: border-box;
 	background-color: rgba(0, 0, 0, 0.75);
 	cursor: pointer;
-	z-index: 999;
+	z-index: 10;
 }
 
 /* 'x' inside the close button */
@@ -43,7 +43,7 @@ body {
 	right: 0;
 	max-height: 90%;
 	max-width: 90%;
-	z-index: 999;
+	z-index: 10;
 	
 	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
@@ -52,7 +52,9 @@ body {
 #previewer-fade {
 	background-color: rgba(0,0,0,0.25);
 	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100vw;
 	height: 100vh;
-	z-index: 998;
+	z-index: 10;
 }
