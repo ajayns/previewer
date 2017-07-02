@@ -1,6 +1,8 @@
 # previewer
 
 ![Giphy](https://media.giphy.com/media/xUOrwnP6582IGswTaU/giphy.gif)
+
+
 A JavaScript image previewer for the web, which uses a Picasa inspired UI and is super light-weight.
 
 ## Setup
