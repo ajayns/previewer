@@ -24,6 +24,7 @@ function Previewer() {
 	// Get img src and call previewer on click
 	$(".preview-image, .preview-images>li>img").click(function () {
 		var imgSrc = $(this).attr("src");
+		$("body").css("overflow", "hidden");
 		$("#previewer-img").attr("src", imgSrc);
 		$("#previewer").css("display", "block");
 	});
@@ -31,6 +32,7 @@ function Previewer() {
 	// Close previewer on click
 	$("#previewer-close").click(function () {
 		$("#previewer").css("display", "none");
+		$("body").css("overflow", "scroll");
 	});
 
 }
