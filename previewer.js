@@ -22,7 +22,7 @@ function Previewer() {
 	$("body").append(this.template);
 
 	// Get img src and call previewer on click
-	$(".preview-img, .preview-imgs>li>img").click(function () {
+	$(".preview-image, .preview-images>li>img").click(function () {
 		var imgSrc = $(this).attr("src");
 		$("#previewer-img").attr("src", imgSrc);
 		$("#previewer").css("display", "block");
