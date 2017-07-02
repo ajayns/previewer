@@ -58,3 +58,8 @@ body {
 	height: 100vh;
 	z-index: 10;
 }
+
+/* Use pointer cursor for src img */
+.preview-img {
+	cursor: pointer;
+}
