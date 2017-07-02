@@ -10,6 +10,12 @@ function Previewer() {
 	$("body").append(this.template);
 
 	$(".preview-img").click(function () {
+		var imgSrc = $(this).attr("src");
+		$("#previewer-img").attr("src", imgSrc);
+		$("#previewer").css("display", "block");
+	});
+	
+	$(".preview-imgs>li>img").click(function () {
 		$("#previewer-img").attr("src", $(this).attr("src"));
 		$("#previewer").css("display", "block");
 	});

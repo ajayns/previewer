@@ -60,6 +60,6 @@ body {
 }
 
 /* Use pointer cursor for src img */
-.preview-img {
+.preview-img, .preview-imgs>li>img {
 	cursor: pointer;
 }
