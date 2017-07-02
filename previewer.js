@@ -1,5 +1,5 @@
 /*!
- * previewer.js v0.0.9
+ * previewer.js v0.1.0
  * https://github.com/ajayns/previewer
  *
  * Copyright (c) 2017 Ajay NS

@@ -32,3 +32,8 @@ To finish up, initialize previewer by adding the following code:
 ```javascript
 var previewer = new Previewer;
 ```
+
+## Features to be added
+* Popup and close animations
+* Keyboard support
+* Add Gulp to auto-minify
