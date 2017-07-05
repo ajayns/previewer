@@ -2,6 +2,8 @@
 
 ![Giphy](https://media.giphy.com/media/xUOrwnP6582IGswTaU/giphy.gif)
 
+[Demo 1](https://ajayns.github.io/previewer/)
+[Demo 2](https://ajayns.github.io/sidworks-website/)
 
 A JavaScript image previewer for the web, which uses a Picasa inspired UI and is super light-weight.
 
@@ -40,3 +42,5 @@ var previewer = new Previewer;
 * Popup and close animations
 * Keyboard support
 * Add Gulp to auto-minify
+* Mobile support
+* Add loader
