@@ -39,6 +39,12 @@ function Previewer() {
 	$("#previewer-close").click(function () {
 		self.closeWindow();
 	});
+	
+	// Close previewer on click outside #previewer-img
+	$("#previewer-fade").click(function () {
+		self.closeWindow();
+	});
+	
 
 	// Close window on keypress
 	$(document).keyup(function (e) {
