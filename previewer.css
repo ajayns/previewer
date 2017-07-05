@@ -21,7 +21,7 @@
 	right: 0;
 	top: 0;
 	box-sizing: border-box;
-	background-color: rgba(0, 0, 0, 0.75);
+	background-color: rgba(0, 0, 0, 0.9);
 	cursor: pointer;
 	z-index: 10;
 }
@@ -48,7 +48,7 @@
 	max-width: 90%;
 	z-index: 10;
 	
-	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 /* Transperant page fade */
@@ -63,6 +63,6 @@
 }
 
 /* Use pointer cursor for src img */
-.preview-img, .preview-imgs>li>img {
+.preview-image, .preview-images>li>img {
 	cursor: pointer;
 }
