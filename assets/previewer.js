@@ -1,5 +1,5 @@
 /*!
- * previewer.js v0.1.0
+ * previewer.js v0.1.1
  * https://github.com/ajayns/previewer
  *
  * Copyright (c) 2017 Ajay NS
@@ -18,6 +18,12 @@ function Previewer() {
 		'		</div>' +
 		'	</div>';
 
+	this.closeWindow = function () {
+		$("#previewer").css("display", "none");
+		$("body").css("overflow", "scroll");
+	}
+
+	var self = this;
 	// Add it to the body on init
 	$("body").append(this.template);
 
@@ -31,8 +37,13 @@ function Previewer() {
 
 	// Close previewer on click
 	$("#previewer-close").click(function () {
-		$("#previewer").css("display", "none");
-		$("body").css("overflow", "scroll");
+		self.closeWindow();
 	});
 
+	// Close window on keypress
+	$(document).keyup(function (e) {
+		if (e.keyCode == 27) { // escape key maps to keycode `27`
+			self.closeWindow();
+		}
+	});
 }
