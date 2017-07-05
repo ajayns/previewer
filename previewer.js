@@ -17,7 +17,13 @@ function Previewer() {
 		'			<span>×</span>' +
 		'		</div>' +
 		'	</div>';
-	
+
+	this.closeWindow = function () {
+		$("#previewer").css("display", "none");
+		$("body").css("overflow", "scroll");
+	}
+
+	var self = this;
 	// Add it to the body on init
 	$("body").append(this.template);
 
@@ -28,11 +34,16 @@ function Previewer() {
 		$("#previewer-img").attr("src", imgSrc);
 		$("#previewer").css("display", "block");
 	});
-	
+
 	// Close previewer on click
 	$("#previewer-close").click(function () {
-		$("#previewer").css("display", "none");
-		$("body").css("overflow", "scroll");
+		self.closeWindow();
 	});
 
+	// Close window on keypress
+	$(document).keyup(function (e) {
+		if (e.keyCode == 27) { // escape key maps to keycode `27`
+			self.closeWindow();
+		}
+	});
 }
