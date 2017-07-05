@@ -40,7 +40,7 @@ var previewer = new Previewer;
 
 ## Features to be added
 * Popup and close animations
-* Keyboard support
+* <s> Keyboard support </s>
 * Add Gulp to auto-minify
 * Mobile support
 * Add loader
