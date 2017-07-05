@@ -1,41 +1,80 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-
+	<meta charset="utf-8" />
 	<title>Previewer</title>
-	<meta name="description" content="The HTML5 Herald">
-	<meta name="author" content="SitePoint">
+	<meta name="description" content="Previewer" />
+	<meta name="author" content="Ajay NS" />
+	<link data-require="bootstrap@*" data-semver="4.0.5" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/previewer.css" />
+	<style>
+		ul {
+			list-style: none;
+		}
 
-	<link rel="stylesheet" href="../previewer.css">
-
+		li {
+			padding: 5px;
+		}
+		.img-thumbnail {
+			max-width: 350px;
+		}
+	</style>
 </head>
 
 <body>
-	
-	Here is a collection of images.
-	<ul class="preview-imgs">
-		<li><img src="http://via.placeholder.com/350x151" alt=""></li>
-		<li><img src="http://via.placeholder.com/350x152" alt=""></li>
-		<li><img src="http://via.placeholder.com/350x153" alt=""></li>
-		<li><img src="http://via.placeholder.com/350x154" alt=""></li>
-		<li><img src="http://via.placeholder.com/350x155" alt=""></li>
-		<li><img src="http://via.placeholder.com/350x156" alt=""></li>
+
+	<nav class="navbar navbar-light bg-inverse">
+		<h1 class="navbar-brand mb-0 text-white">Previewer Demo</h1>
+	</nav>
+
+	<br/>
+
+	<p class="text-center">Here is a collection of images.</p>
+	<ul class="preview-images row justify-content-center">
+		<li>
+			<img src="assets/img/img1.jpg" alt="" class="img-thumbnail" />
+		</li>
+		<li>
+			<img src="assets/img/img2.jpg" alt="" class="img-thumbnail" />
+		</li>
+		<li>
+			<img src="assets/img/img3.jpg" alt="" class="img-thumbnail" />
+		</li>
+		<li>
+			<img src="assets/img/img4.jpg" alt="" class="img-thumbnail" />
+		</li>
+		<li>
+			<img src="assets/img/img5.jpg" alt="" class="img-thumbnail" />
+		</li>
+		<li>
+			<img src="assets/img/img6.jpg" alt="" class="img-thumbnail" />
+		</li>
 	</ul>
-	
-	Also works on single images
-	<img src="
-http://via.placeholder.com/350x150" alt="" class="preview-img">
-	
-	<script
-			  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-			  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-			  crossorigin="anonymous"></script>
-	<script src="../previewer.js"></script>
+
+
+	<br/>
+	<p class="text-center">Also works on single images</p>
+	<div class="row justify-content-center">
+		<img src="assets/img/img7.jpg" alt="" class="preview-image img-thumbnail" />
+	</div>
+	<br/>
+
+	<nav class="navbar navbar-light bg-inverse row">
+		<div class="text-white container text-center">
+			<span>Designed and developed by Ajay NS</span>
+			<br/>
+			<a href="https://github.com/ajayns/previewer">Fork me on Github</a>
+		</div>
+	</nav>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+	<script src="assets/previewer.js"></script>
+	<script data-require="bootstrap@*" data-semver="4.0.5" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+
 	<script>
 		var previewer = new Previewer();
+
 	</script>
 </body>
 
