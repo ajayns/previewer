@@ -28,7 +28,7 @@ function Previewer() {
   $("body").append(this.template);
 
   // Get img src and call previewer on click
-  $(".preview-image, .preview-images>li>img").click(function() {
+  $(".preview-image, .preview-images img").click(function() {
     var imgSrc = $(this).attr("src");
     $("body").css("overflow", "hidden");
     $("#previewer-img").attr("src", imgSrc);
@@ -36,9 +36,7 @@ function Previewer() {
   });
 
   // Close previewer when clicked
-  $("#previewer-close, #previewer-fade").click(function() {
-    self.closeWindow();
-  });
+  $("#previewer-close, #previewer-fade").click(this.closeWindow);
 
   // Close window on keypress
   $(document).keyup(function(e) {

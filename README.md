@@ -44,3 +44,4 @@ var previewer = new Previewer;
 * Add Gulp to auto-minify
 * Mobile support
 * Add loader
+* Remove jQuery dependancy
