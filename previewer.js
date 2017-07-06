@@ -25,6 +25,7 @@ function Previewer() {
 	// Define function to close preview
 	this.closeWindow = function () {
 		document.getElementById("previewer").style.display = "none";
+		document.getElementById("previewer-img").src = "";
 		document.body.style.overflow = "scroll";
 	};
 

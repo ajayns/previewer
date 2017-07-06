@@ -26,9 +26,9 @@ For multiple images, arranged as a list, add a `preview-images` class to the par
 
 ```html
 <ul class="preview-images">
-		<li><img src="Path/To/Image1" alt="" /></li>
-    <li><img src="Path/To/Image2" alt="" /></li>
-    <li><img src="Path/To/Image3" alt="" /></li>
+  <li><img src="Path/To/Image1" alt="" /></li>
+  <li><img src="Path/To/Image2" alt="" /></li>
+  <li><img src="Path/To/Image3" alt="" /></li>
 </ul>
 ```
 
