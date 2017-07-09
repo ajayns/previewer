@@ -41,6 +41,6 @@ var previewer = new Previewer;
 * Popup and close animations
 * <s> Keyboard support </s>
 * Add Gulp to auto-minify
-* Mobile support
+* <s> Mobile support </s>
 * Add loader
 * <s> Remove jQuery dependancy </s>
