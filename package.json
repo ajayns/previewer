@@ -1,0 +1,17 @@
+{
+  "name": "previewer",
+  "description": "A JavaScript image previewer for the web, which uses a Picasa inspired UI and is super light-weight.",
+  "version": "1.2.3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/ajayns/previewer.git",
+  "keywords": [],
+  "author": "Ajay NS <ajay.ns@outlook.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajayns/previewer/issues"
+  },
+  "homepage": "https://github.com/ajayns/previewer"
+}
