@@ -1,0 +1,18 @@
+{
+  "name": "previewer",
+  "description": "A JavaScript image previewer for the web, which uses a Picasa inspired UI and is super light-weight",
+  "main": "index.js",
+  "authors": [
+    "Ajay NS <ajay.ns@outlook.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "iamge",
+    "preview",
+    "picasa",
+    "vanilla-js",
+    "image-viewer",
+    "js"
+  ],
+  "homepage": "https://github.com/ajayns/previewer"
+}
