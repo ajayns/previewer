@@ -32,9 +32,16 @@ For multiple images, arranged as a list, add a `preview-images` class to the par
 </ul>
 ```
 
+For different thumbnail and preview, use `data-previewer` attribute.
+
+```html
+<img src="Path/To/Thumbnail" data-previewer="Path/To/Image" >
+
+```
+
 To finish up, initialize previewer by adding the following code:
 ```javascript
-var previewer = new Previewer;
+let previewer = new Previewer();
 ```
 
 ## Features to be added
