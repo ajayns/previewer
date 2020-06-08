@@ -30,17 +30,17 @@ function Previewer() {
 		document.body.style.overflow = "scroll";
 	};
 
-	let self = this;
+	var self = this;
 
-	let current = 0;
+	var current = 0;
 
 	// Call previewer on image click
-	let images = document.querySelectorAll(".preview-image, .preview-images img");
+	var images = document.querySelectorAll(".preview-image, .preview-images img");
 	
 	for (i = 0; i < images.length; i++) {
 		(function(i) {
 			images[i].addEventListener('click', function () {
-				let imgSrc = (this.dataset["previewer"] === undefined) ? this.getAttribute("src"): this.dataset["previewer"];
+				var imgSrc = (this.dataset["previewer"] === undefined) ? this.getAttribute("src"): this.dataset["previewer"];
 				document.getElementById("previewer-img").src = imgSrc;
 				document.getElementById("previewer").style.display = "block";
 				current = i;
