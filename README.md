@@ -2,8 +2,7 @@
 
 ![Giphy](https://media.giphy.com/media/xUOrwnP6582IGswTaU/giphy.gif)
 
-[Demo 1](https://ajayns.github.io/previewer/)
-[Demo 2](https://ajayns.github.io/sidworks-website/)
+[Demo 1](https://sidworks.netlify.app/)
 
 A JavaScript image previewer for the web, which uses a Picasa inspired UI and is super light-weight.
 
