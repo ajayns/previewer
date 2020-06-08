@@ -14,6 +14,7 @@ Make sure you have the previewer.js and previewer.css files (or the minified ver
 <link rel="stylesheet" href="Path/To/previewer.css" />
 
 <script src="Path/To/previewer.js" type="text/javascript"></script>
+
 ```
 For adding the preview functionality to a single image, just add a `preview-image` class.
 
@@ -31,9 +32,17 @@ For multiple images, arranged as a list, add a `preview-images` class to the par
 </ul>
 ```
 
+For different thumbnail and preview, use `data-previewer` attribute.
+
+```html
+<img src="Path/To/Thumbnail" data-previewer="Path/To/Image" >
+
+```
+
 To finish up, initialize previewer by adding the following code:
+
 ```javascript
-var previewer = new Previewer;
+var previewer = new Previewer();
 ```
 
 ## Features to be added

@@ -40,7 +40,7 @@ function Previewer() {
 	for (i = 0; i < images.length; i++) {
 		(function(i) {
 			images[i].addEventListener('click', function () {
-				var imgSrc = this.getAttribute("src");
+				var imgSrc = (this.dataset["previewer"] === undefined) ? this.getAttribute("src"): this.dataset["previewer"];
 				document.getElementById("previewer-img").src = imgSrc;
 				document.getElementById("previewer").style.display = "block";
 				current = i;
@@ -68,13 +68,13 @@ function Previewer() {
 		// Next image on arrow right
 		if (e.keyCode == '39') {
 			if (current < images.length-1)
-				document.getElementById("previewer-img").src = images[++current].getAttribute("src");		
+				document.getElementById("previewer-img").src = (images[++current].dataset["previewer"] === undefined) ? images[++current].getAttribute("src"): images[++current].dataset["previewer"];
 		}
 
 		// Previous image on arrow left
 		if (e.keyCode == "37") {
 			if (current > 0)
-				document.getElementById("previewer-img").src = images[--current].getAttribute("src");
+				document.getElementById("previewer-img").src = (images[--current].dataset["previewer"] === undefined) ? images[--current].getAttribute("src"): images[--current].dataset["previewer"];
 		}
 	}
 }
